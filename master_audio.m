@@ -1,16 +1,16 @@
-function master_audio
+function master_audio(tiempo_Total)
 % Master Audio:
 % Esta función es para utilizar el microfono de la laptop en tiempo real y
 % de forma continua. Sólo se tiene que correr este código, no recibe
 % variables de entrada y no tiene variables de salida.
 
 %%
-close all
-clear all
-clc
+% close all
+% clear all
+% clc
 
 currentSec = 0;             % Variable donde se guarda el tiempo actual
-tiempo_Total = 10;          % Tiempo total de adquisición
+% tiempo_Total = 10;          % Tiempo total de adquisición
 
 fs = 20000;                 % Frecuencia de Sampleo
 nBits = 16;                 % Resolución de adquisición

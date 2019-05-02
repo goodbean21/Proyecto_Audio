@@ -17,7 +17,6 @@ function [P1, f]= powerSpectrum(y, fs)
     P2 = abs(Y1/L);                 % Tomar sólo la parte positiva del espectro de Fourier
     P1 = P2(1:L/2+1);               % Tomar sólo la mitad del espectro, repetición de señales
     P1(2:end-1) = 2*P1(2:end-1);    % Reescribir P1 en función de los nuevos datos
-    P1 = detrend(P1, 'linear', 5);
     f = fs*(0:(L/2))/L;             % Dominio de frecuencia en función del número 
                                     % De samples y la frecuencia de sampleo
     subplot(1,3,2),plot(f(1:end-1),P1(1:end-1));
