@@ -6,7 +6,7 @@ function [P1, f]= powerSpectrum(y, fs)
 %%
 
     Y1 = fft(y);                     % Transformada rápida de Fourier de la señal de audio sin procesar
-
+    
     L = length(Y1);                  % number of samples
     
     phase = angle(Y1) * (180/pi);    % Cálculo del espectro de fase y su conversión a grados
